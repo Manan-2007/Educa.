@@ -160,15 +160,9 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
-## 📃 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
 <div align="center">
 
-Made with ❤️ by **Rachit Goyal**  
+Made with ❤️ by **Manan Kochhar, Shrishti Jain, Bhavika Bakshi**  
 Copyright &copy; 2026 **Educa.** | All rights reserved
 
 </div>
