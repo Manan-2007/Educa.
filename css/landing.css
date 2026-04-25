@@ -1,0 +1,154 @@
+/* ==========================================
+   Educa. Landing Page Styles (Udemy Inspired)
+   ========================================== */
+
+.landing-hero-bg {
+   background-color: var(--white);
+   border-bottom: var(--border);
+}
+
+.landing-hero {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+   gap: 3rem;
+   padding: 5rem 2rem;
+   min-height: 60vh;
+}
+
+.landing-hero .content {
+   flex: 1 1 40rem;
+}
+
+.landing-hero .content h1 {
+   font-size: 4.5rem;
+   color: var(--black);
+   line-height: 1.2;
+   margin-bottom: 1.5rem;
+}
+
+.landing-hero .content p {
+   font-size: 1.8rem;
+   color: var(--light-color);
+   line-height: 1.6;
+   margin-bottom: 2.5rem;
+}
+
+.landing-hero .image {
+   flex: 1 1 40rem;
+   text-align: center;
+}
+
+.landing-hero .image img {
+   width: 100%;
+   max-width: 60rem;
+}
+
+.trusted-by {
+   background-color: var(--light-bg);
+   padding: 4rem 2rem;
+   text-align: center;
+   border-bottom: var(--border);
+}
+
+.trusted-by h3 {
+   font-size: 2rem;
+   color: var(--light-color);
+   margin-bottom: 2.5rem;
+   font-weight: 400;
+}
+
+.trusted-by .brands {
+   display: flex;
+   justify-content: center;
+   gap: 5rem;
+   flex-wrap: wrap;
+   font-size: 4rem;
+   color: var(--light-color);
+}
+
+.trusted-by .brands i {
+   transition: .2s linear;
+}
+
+.trusted-by .brands i:hover {
+   color: var(--main-color);
+}
+
+.landing-categories .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap: 1.5rem;
+   justify-content: center;
+}
+
+.landing-categories .box {
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding: 3rem 2rem;
+   text-align: center;
+   border: var(--border);
+   cursor: pointer;
+   transition: .2s linear;
+}
+
+.landing-categories .box:hover {
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   background-color: var(--light-bg);
+}
+
+.landing-categories .box i {
+   font-size: 4rem;
+   color: var(--main-color);
+   margin-bottom: 1.5rem;
+}
+
+.landing-categories .box h3 {
+   font-size: 2rem;
+   color: var(--black);
+}
+
+.landing-features {
+   background-color: var(--white);
+   border-top: var(--border);
+   margin-top: 3rem;
+   padding-bottom: 5rem;
+}
+
+.landing-features .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+   justify-content: center;
+   margin-top: 3rem;
+}
+
+.landing-features .box {
+   text-align: center;
+   padding: 2rem;
+}
+
+.landing-features .box i {
+   font-size: 4.5rem;
+   color: var(--main-color);
+   margin-bottom: 1.5rem;
+}
+
+.landing-features .box h3 {
+   font-size: 2.2rem;
+   color: var(--black);
+   margin-bottom: 1rem;
+   text-transform: capitalize;
+}
+
+.landing-features .box p {
+   font-size: 1.6rem;
+   color: var(--light-color);
+   line-height: 2;
+}
+
+@media (max-width: 768px) {
+   .landing-hero .content h1 {
+      font-size: 3.5rem;
+   }
+}
