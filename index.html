@@ -5,7 +5,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Educa. - Online Courses</title>
+   <title>Educa. - Learn the Future, Be the Future</title>
+   <meta name="description" content="Power up your career with expert-led online courses in AI, Data Science, Cyber Security and more. Join millions of learners on Educa.">
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -17,6 +18,16 @@
 
 <body style="padding-left: 0;">
 
+   <!-- Top Promo Banner -->
+   <div class="promo-banner" id="promo-banner">
+      <div class="banner-content">
+         <p><b>Want to explore more?</b> New courses starting from just <b>₹199</b></p>
+         <p class="days-left">5 days left!!</p>
+      </div>
+      <button class="close-banner" id="close-banner" aria-label="Close banner">×</button>
+   </div>
+
+   <!-- Navigation -->
    <header class="header">
       <section class="flex">
          <a href="index.html" class="logo">Educa.</a>
@@ -38,161 +49,247 @@
       </section>
    </header>
 
+   <!-- Hero Section -->
    <div class="landing-hero-bg">
-      <section class="landing-hero">
+      <section class="landing-hero" style="max-width: 1400px; padding: 0 2rem;">
          <div class="content">
-            <h1>Learning that gets you</h1>
-            <p>Skills for your present (and your future). Get started with us to unlock a world of knowledge from industry experts.</p>
-            <form action="register.html" style="display: flex; gap: 1rem; margin-top: 2rem;">
-               <input type="text" placeholder="What do you want to learn?" style="flex: 1; padding: 1.5rem; font-size: 1.8rem; border-radius: .5rem; border: var(--border); background-color: var(--light-bg); color: var(--black);">
-               <button type="submit" class="inline-btn" style="width: auto; margin-top: 0; padding: 1.5rem 2rem;"><i class="fas fa-search"></i></button>
-            </form>
+            <h1>Learn the future and Be the future!</h1>
+            <p>Power up your AI, career, and life skills with the most up-to-date, expert-led learning on Educa.</p>
+            <div class="hero-buttons">
+               <a href="register.html" class="try-btn">Get Started</a>
+               <a href="courses.html" class="ai-btn">Explore Courses</a>
+            </div>
          </div>
          <div class="image">
-            <img src="images/about-img.svg" alt="Learn Online">
+            <img src="images/asian-woman-working-on-laptop.png" alt="Student learning on laptop">
          </div>
       </section>
    </div>
 
-   <div class="trusted-by">
-      <section style="padding: 0;">
-         <h3>Trusted by over 15,000 companies and millions of learners around the world</h3>
-         <div class="brands">
-            <i class="fab fa-aws"></i>
-            <i class="fab fa-google"></i>
-            <i class="fab fa-microsoft"></i>
-            <i class="fab fa-apple"></i>
-            <i class="fab fa-meta"></i>
-         </div>
-      </section>
+   <!-- Trusted By -->
+   <div class="trusted-section">
+      <p>Trusted by over 17,000 companies and millions of learners around the world</p>
+      <div class="company-logos">
+         <img src="images/company1.svg" alt="Volkswagen">
+         <img src="images/company2.svg" alt="Samsung">
+         <img src="images/company3.svg" alt="Vimeo">
+         <img src="images/company4.svg" alt="Cisco">
+         <img src="images/company5.svg" alt="P&G">
+         <img src="images/company6.svg" alt="Citi">
+         <img src="images/company7.svg" alt="HP Enterprise">
+      </div>
    </div>
 
-   <section class="courses" style="padding-top: 5rem;">
-      <h1 class="heading">A broad selection of courses</h1>
-      <p style="font-size: 1.8rem; color: var(--light-color); margin-bottom: 3rem;">Choose from 10,000 online video courses with new additions published every month</p>
-      
-      <div class="box-container">
-         <div class="box">
-            <div class="tutor">
-               <img src="images/pic-2.jpg" alt="">
-               <div class="info">
-                  <h3>Jessica Taylor</h3>
-                  <span>Web Developer</span>
-               </div>
+   <!-- Career Courses Section -->
+   <section class="career-section">
+      <h2>Ready to Start Your Learning?</h2>
+      <p>Get the skills and real-world experience employers want with Career Accelerators</p>
+
+      <div class="course-cards">
+         <div class="course-card" onclick="window.location.href='login.html'">
+            <div class="card-image">
+               <img src="images/cyber-security.png" alt="Cyber Security">
             </div>
-            <div class="thumb">
-               <img src="images/thumb-1.png" alt="">
-               <span>10 videos</span>
+            <h3>Cyber Security</h3>
+            <div class="card-stats">
+               <span class="rating">⭐ 4.7</span>
+               <span>457K ratings</span>
+               <span>87.8 total hours</span>
             </div>
-            <h3 class="title">Complete HTML Tutorial</h3>
-            <a href="login.html" class="inline-btn">View Course</a>
          </div>
-         
-         <div class="box">
-            <div class="tutor">
-               <img src="images/pic-3.jpg" alt="">
-               <div class="info">
-                  <h3>Christopher Moore</h3>
-                  <span>UI/UX Designer</span>
-               </div>
+
+         <div class="course-card" onclick="window.location.href='login.html'">
+            <div class="card-image">
+               <img src="images/ai-expert.png" alt="AI Tools Expert">
             </div>
-            <div class="thumb">
-               <img src="images/thumb-2.png" alt="">
-               <span>10 videos</span>
+            <h3>AI Tools Expert</h3>
+            <div class="card-stats">
+               <span class="rating">⭐ 4.5</span>
+               <span>987K ratings</span>
+               <span>28.4 total hours</span>
             </div>
-            <h3 class="title">Complete CSS Tutorial</h3>
-            <a href="login.html" class="inline-btn">View Course</a>
          </div>
-         
-         <div class="box">
-            <div class="tutor">
-               <img src="images/pic-4.jpg" alt="">
-               <div class="info">
-                  <h3>Amanda Anderson</h3>
-                  <span>Software Engineer</span>
-               </div>
+
+         <div class="course-card" onclick="window.location.href='login.html'">
+            <div class="card-image">
+               <img src="images/data-scientest.png" alt="Data Scientist">
             </div>
-            <div class="thumb">
-               <img src="images/thumb-3.png" alt="">
-               <span>10 videos</span>
+            <h3>Data Scientist</h3>
+            <div class="card-stats">
+               <span class="rating">⭐ 4.6</span>
+               <span>485K ratings</span>
+               <span>47.1 total hours</span>
             </div>
-            <h3 class="title">Complete JS Tutorial</h3>
-            <a href="login.html" class="inline-btn">View Course</a>
          </div>
       </div>
    </section>
 
-   <section class="landing-categories" style="padding-top: 2rem;">
-      <h1 class="heading">Top Categories</h1>
-      <div class="box-container">
-         <div class="box" onclick="window.location.href='login.html'">
-            <i class="fas fa-code"></i>
-            <h3>Development</h3>
+   <!-- Skills Section -->
+   <section class="skills-section">
+      <h2>All the skills you need in one place</h2>
+      <p>From critical skills to technical topics, Educa supports your professional development</p>
+
+      <div class="skills-categories">
+         <span>Data Science</span>
+         <span>IT Certificate</span>
+         <span>Leadership</span>
+         <span>Web Development</span>
+         <span>Communication</span>
+         <span>Analysis</span>
+      </div>
+
+      <div class="skills-courses">
+         <div class="skill-item">
+            <span>Microsoft Excel</span>
+            <span class="learners">4M+ learners</span>
          </div>
-         <div class="box" onclick="window.location.href='login.html'">
-            <i class="fas fa-chart-simple"></i>
-            <h3>Business</h3>
+         <div class="skill-item">
+            <span>SQL</span>
+            <span class="learners">7M+ learners</span>
          </div>
-         <div class="box" onclick="window.location.href='login.html'">
-            <i class="fas fa-pen"></i>
-            <h3>Design</h3>
+         <div class="skill-item">
+            <span>Python</span>
+            <span class="learners">10M+ learners</span>
          </div>
-         <div class="box" onclick="window.location.href='login.html'">
-            <i class="fas fa-chart-line"></i>
-            <h3>Marketing</h3>
+         <div class="skill-item">
+            <span>Data Modeling</span>
+            <span class="learners">6M+ learners</span>
          </div>
-         <div class="box" onclick="window.location.href='login.html'">
-            <i class="fas fa-music"></i>
-            <h3>Music</h3>
+         <div class="skill-item">
+            <span>Tableau</span>
+            <span class="learners">3M+ learners</span>
          </div>
-         <div class="box" onclick="window.location.href='login.html'">
-            <i class="fas fa-camera"></i>
-            <h3>Photography</h3>
+      </div>
+
+      <div class="featured-courses">
+         <div class="course-card featured" onclick="window.location.href='login.html'">
+            <div class="featured-image">
+               <img src="images/ai-brain.png" alt="AI Course">
+            </div>
+            <div class="course-info">
+               <h3>The Complete Artificial Intelligence & ChatGPT</h3>
+               <p>Henry Habib</p>
+               <div class="course-stats">
+                  <span class="rating">5.0 ⭐⭐⭐⭐⭐</span>
+                  <span class="price">₹ 625</span>
+               </div>
+               <span class="bestseller">Bestseller</span>
+            </div>
          </div>
-         <div class="box" onclick="window.location.href='login.html'">
-            <i class="fas fa-desktop"></i>
-            <h3>IT & Software</h3>
-         </div>
-         <div class="box" onclick="window.location.href='login.html'">
-            <i class="fas fa-heartbeat"></i>
-            <h3>Health & Fitness</h3>
+         <div class="course-card featured" onclick="window.location.href='login.html'">
+            <div class="featured-image">
+               <img src="images/chatgpt-logo.png" alt="ChatGPT Course">
+            </div>
+            <div class="course-info">
+               <h3>Complete ChatGPT Course For Work 2025</h3>
+               <p>Steve Ballinger</p>
+               <div class="course-stats">
+                  <span class="rating">5.0 ⭐⭐⭐⭐⭐</span>
+                  <span class="price">₹ 625</span>
+               </div>
+               <span class="bestseller">Bestseller</span>
+            </div>
          </div>
       </div>
    </section>
 
-   <div class="landing-features">
-      <section>
-         <h1 class="heading" style="text-align: center; border: none;">Why choose Educa?</h1>
-         <div class="box-container">
-            <div class="box">
-               <i class="fas fa-play-circle"></i>
-               <h3>Learn in-demand skills</h3>
-               <p>Access over 10,000 video courses across various topics and stay ahead of the curve.</p>
+   <!-- Learning Features Section -->
+   <section class="learn-features">
+      <div class="section-header">
+         <h2>LEARN | FOSTER | EXPRESS</h2>
+      </div>
+      <div class="features-container">
+         <div class="features-content">
+            <div class="feature-card">
+               <div class="feature-icon">
+                  <img src="images/hands-on-icon.png" alt="Hands-on training">
+               </div>
+               <div class="feature-text">
+                  <h3>Hands-on training</h3>
+                  <p>Upskill effectively with AI-powered coding exercises, practice tests, and quizzes.</p>
+               </div>
             </div>
-            <div class="box">
-               <i class="fas fa-star"></i>
-               <h3>Expert instruction</h3>
-               <p>Find the right instructor for you with our community of industry professionals.</p>
+            <div class="feature-card">
+               <div class="feature-icon">
+                  <img src="images/certification-icon.png" alt="Certification prep">
+               </div>
+               <div class="feature-text">
+                  <h3>Certification prep</h3>
+                  <p>Gain certification readiness through real-world problem solving while collecting badges for progress.</p>
+               </div>
             </div>
-            <div class="box">
-               <i class="fas fa-clock"></i>
-               <h3>Lifetime access</h3>
-               <p>Learn on your schedule with lifetime access to your purchased courses.</p>
+            <div class="feature-card">
+               <div class="feature-icon">
+                  <img src="images/analytics-icon.png" alt="Insights and analytics">
+               </div>
+               <div class="feature-text">
+                  <h3>Insights and analytics</h3>
+                  <p>Fast-track your goals using advanced insights and dedicated success support for effective learning.</p>
+               </div>
             </div>
          </div>
-         
-         <div style="text-align: center; margin-top: 4rem;">
-            <a href="register.html" class="inline-btn" style="padding: 1.5rem 4rem; font-size: 2rem;">Join for Free</a>
+         <div class="features-image">
+            <img src="images/astronaut.png" alt="Astronaut illustration" class="astronaut-img">
          </div>
-      </section>
-   </div>
+      </div>
+   </section>
 
+   <!-- Testimonials Section -->
+   <section class="testimonials-section">
+      <h2>Accelerate growth — for you or your organization</h2>
+      <p>See what others are achieving through learning</p>
+
+      <div class="testimonials-container">
+         <div class="testimonial-card">
+            <p>"Because of this course I was able to clear my two interviews... Thanks for making such wonderful content."</p>
+            <div class="author">
+               <span class="avatar">DS</span>
+               <span class="name">Diksha S</span>
+            </div>
+         </div>
+         <div class="testimonial-card">
+            <p>"Today, I am a software developer, and I credit a significant part of my success to the solid foundation laid by this course."</p>
+            <div class="author">
+               <span class="avatar">CB</span>
+               <span class="name">Chethan B</span>
+            </div>
+         </div>
+         <div class="testimonial-card">
+            <p>"This course helped me grow from frontend engineer to full stack engineer, greatly boosting my career."</p>
+            <div class="author">
+               <span class="avatar">BK</span>
+               <span class="name">Batchu K</span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Partners Section -->
+   <section class="partners-section">
+      <p>Top companies choose Educa to build in-demand career skills.</p>
+      <div class="partner-logos">
+         <img src="images/nasdaq.svg" alt="Nasdaq">
+         <img src="images/volkswagen.svg" alt="Volkswagen">
+      </div>
+   </section>
+
+   <!-- Footer -->
    <footer class="footer">
       Copyright &copy; 2026 <span style="color: var(--main-color);">Educa.</span> | All rights reserved!
    </footer>
 
-   <!-- Custom inline script for dark mode & search toggle on landing page -->
+   <!-- Scripts -->
    <script>
+      // Close promo banner
+      const closeBanner = document.getElementById('close-banner');
+      const promoBanner = document.getElementById('promo-banner');
+      if (closeBanner && promoBanner) {
+         closeBanner.onclick = () => {
+            promoBanner.style.display = 'none';
+         };
+      }
+
+      // Dark mode & search toggle
       let toggleBtn = document.getElementById('toggle-btn');
       let searchBtn = document.getElementById('search-btn');
       let searchForm = document.querySelector('.header .flex .search-form');
@@ -231,7 +328,7 @@
             searchForm.classList.toggle('active');
          }
       }
-      
+
       // If user is already logged in, redirect to home
       const currentUser = JSON.parse(localStorage.getItem('educa_current_user'));
       if (currentUser) {

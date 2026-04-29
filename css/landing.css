@@ -1,154 +1,785 @@
 /* ==========================================
-   Educa. Landing Page Styles (Udemy Inspired)
+   Educa. Landing Page Styles
+   Inspired by E-Learning Platform Design
    ========================================== */
 
+/* --- Top Promo Banner --- */
+.promo-banner {
+   background: linear-gradient(135deg, #c4a484, #d4b896);
+   padding: 1rem 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   z-index: 999;
+}
+
+.promo-banner .banner-content {
+   text-align: center;
+   font-size: 1.5rem;
+   color: #1a1a1a;
+}
+
+.promo-banner .banner-content b {
+   font-weight: 700;
+}
+
+.promo-banner .days-left {
+   font-weight: 700;
+   margin-top: .3rem;
+   font-size: 1.4rem;
+}
+
+.promo-banner .close-banner {
+   position: absolute;
+   right: 2rem;
+   background: none;
+   border: none;
+   font-size: 2.2rem;
+   cursor: pointer;
+   color: #333;
+   line-height: 1;
+   padding: .5rem;
+   transition: transform .2s;
+}
+
+.promo-banner .close-banner:hover {
+   transform: scale(1.3);
+}
+
+/* --- Hero Section --- */
 .landing-hero-bg {
-   background-color: var(--white);
-   border-bottom: var(--border);
+   background-color: #0a192f;
+   overflow: hidden;
+   border-bottom: none;
 }
 
 .landing-hero {
    display: flex;
    align-items: center;
-   flex-wrap: wrap-reverse;
-   gap: 3rem;
-   padding: 5rem 2rem;
-   min-height: 60vh;
+   justify-content: space-between;
+   gap: 2rem;
+   padding: 0 2rem;
+   min-height: 55rem;
+   max-width: 1400px;
+   margin: 0 auto;
 }
 
 .landing-hero .content {
-   flex: 1 1 40rem;
+   flex: 0 1 50rem;
+   background-color: rgba(144, 238, 233, 0.92);
+   padding: 4rem;
+   border-radius: 1.2rem;
+   margin: 4rem 0;
+   z-index: 1;
+   backdrop-filter: blur(5px);
 }
 
 .landing-hero .content h1 {
-   font-size: 4.5rem;
-   color: var(--black);
+   font-size: 4rem;
+   color: #0a192f;
    line-height: 1.2;
    margin-bottom: 1.5rem;
+   font-weight: 800;
 }
 
 .landing-hero .content p {
-   font-size: 1.8rem;
-   color: var(--light-color);
-   line-height: 1.6;
-   margin-bottom: 2.5rem;
+   font-size: 1.7rem;
+   color: #1a1a2e;
+   line-height: 1.7;
+   margin-bottom: 2rem;
+}
+
+.landing-hero .hero-buttons {
+   display: flex;
+   gap: 1.5rem;
+   margin-top: 2rem;
+}
+
+.landing-hero .hero-buttons .try-btn {
+   background: var(--main-color);
+   color: #fff;
+   padding: 1.2rem 3rem;
+   border: none;
+   border-radius: .6rem;
+   font-size: 1.6rem;
+   font-weight: 700;
+   cursor: pointer;
+   text-transform: uppercase;
+   letter-spacing: .5px;
+   transition: all .3s ease;
+   text-decoration: none;
+   display: inline-block;
+}
+
+.landing-hero .hero-buttons .try-btn:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 5px 20px rgba(142, 68, 173, 0.4);
+   background: #9b59b6;
+}
+
+.landing-hero .hero-buttons .ai-btn {
+   background: #1a1a2e;
+   color: #fff;
+   padding: 1.2rem 3rem;
+   border: none;
+   border-radius: .6rem;
+   font-size: 1.6rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all .3s ease;
+   text-decoration: none;
+   display: inline-block;
+}
+
+.landing-hero .hero-buttons .ai-btn:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+   background: #2d2d44;
 }
 
 .landing-hero .image {
-   flex: 1 1 40rem;
-   text-align: center;
+   flex: 1;
+   height: 55rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
 }
 
 .landing-hero .image img {
    width: 100%;
-   max-width: 60rem;
+   height: 100%;
+   object-fit: cover;
 }
 
-.trusted-by {
-   background-color: var(--light-bg);
-   padding: 4rem 2rem;
+/* --- Career / Course Cards Section --- */
+.career-section {
+   padding: 6rem 2rem;
    text-align: center;
-   border-bottom: var(--border);
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
-.trusted-by h3 {
-   font-size: 2rem;
+.career-section h2 {
+   font-size: 3rem;
+   color: var(--black);
+   margin-bottom: 1.5rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 800;
+}
+
+.career-section > p {
    color: var(--light-color);
-   margin-bottom: 2.5rem;
+   margin-bottom: 4rem;
+   font-size: 1.7rem;
+}
+
+.course-cards {
+   display: flex;
+   justify-content: center;
+   gap: 3rem;
+   flex-wrap: wrap;
+}
+
+.course-card {
+   background-color: var(--white);
+   border-radius: 1.2rem;
+   overflow: hidden;
+   width: 30rem;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+   cursor: pointer;
+   transition: all .3s ease;
+   border: .1rem solid rgba(0,0,0,.06);
+}
+
+.course-card:hover {
+   transform: translateY(-.7rem);
+   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.course-card .card-image {
+   height: 20rem;
+   overflow: hidden;
+}
+
+.course-card .card-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform .4s ease;
+}
+
+.course-card:hover .card-image img {
+   transform: scale(1.08);
+}
+
+.course-card h3 {
+   padding: 1.5rem 2rem .5rem;
+   font-size: 1.8rem;
+   color: var(--black);
+   font-weight: 700;
+}
+
+.course-card .card-stats {
+   padding: .5rem 2rem 2rem;
+   display: flex;
+   justify-content: space-between;
+   color: var(--light-color);
+   font-size: 1.3rem;
+}
+
+.course-card .card-stats .rating {
+   color: #f4c150;
+   font-weight: bold;
+}
+
+/* --- Skills Section --- */
+.skills-section {
+   padding: 6rem 2rem;
+   background-color: var(--white);
+   text-align: center;
+}
+
+.skills-section h2 {
+   margin-bottom: 1.5rem;
+   font-size: 3rem;
+   color: var(--black);
+   font-weight: 800;
+}
+
+.skills-section > p {
+   color: var(--light-color);
+   margin-bottom: 3rem;
+   font-size: 1.7rem;
+   max-width: 80rem;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.skills-categories {
+   display: flex;
+   gap: 1.5rem;
+   margin: 3rem auto;
+   max-width: 1200px;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.skills-categories span {
+   padding: 1rem 2rem;
+   background-color: var(--light-bg);
+   border-radius: 2.5rem;
+   font-size: 1.5rem;
+   color: var(--light-color);
+   cursor: pointer;
+   transition: all .3s ease;
+   font-weight: 600;
+}
+
+.skills-categories span:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   background-color: var(--main-color);
+   color: #fff;
+}
+
+.skills-courses {
+   display: flex;
+   gap: 1.5rem;
+   padding: 2rem 0;
+   max-width: 1200px;
+   margin: 0 auto;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.skill-item {
+   background-color: #2d2d2d;
+   color: #fff;
+   padding: 1.8rem 2.5rem;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+   min-width: 18rem;
+   cursor: pointer;
+   transition: all .3s ease;
+   font-size: 1.6rem;
+   font-weight: 600;
+}
+
+.skill-item:hover {
+   transform: translateY(-3px);
+   background-color: #404040;
+   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.skill-item .learners {
+   font-size: 1.3rem;
+   color: #b0b0b0;
    font-weight: 400;
 }
 
-.trusted-by .brands {
+.featured-courses {
    display: flex;
+   gap: 3rem;
+   margin: 4rem auto;
+   max-width: 1200px;
    justify-content: center;
-   gap: 5rem;
    flex-wrap: wrap;
-   font-size: 4rem;
-   color: var(--light-color);
 }
 
-.trusted-by .brands i {
-   transition: .2s linear;
-}
-
-.trusted-by .brands i:hover {
-   color: var(--main-color);
-}
-
-.landing-categories .box-container {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-   gap: 1.5rem;
-   justify-content: center;
-}
-
-.landing-categories .box {
-   background-color: var(--white);
-   border-radius: .5rem;
-   padding: 3rem 2rem;
-   text-align: center;
-   border: var(--border);
-   cursor: pointer;
-   transition: .2s linear;
-}
-
-.landing-categories .box:hover {
-   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+.course-card.featured {
+   flex: 1;
+   max-width: 40rem;
    background-color: var(--light-bg);
+   border: .1rem solid rgba(0,0,0,.08);
+   border-radius: 1.2rem;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+   overflow: hidden;
+   width: auto;
 }
 
-.landing-categories .box i {
-   font-size: 4rem;
-   color: var(--main-color);
-   margin-bottom: 1.5rem;
+.course-card.featured:hover {
+   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
-.landing-categories .box h3 {
-   font-size: 2rem;
-   color: var(--black);
+.course-card.featured .featured-image {
+   height: 20rem;
+   overflow: hidden;
+   border-bottom: .1rem solid rgba(0,0,0,.06);
 }
 
-.landing-features {
-   background-color: var(--white);
-   border-top: var(--border);
-   margin-top: 3rem;
-   padding-bottom: 5rem;
+.course-card.featured .featured-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform .4s ease;
 }
 
-.landing-features .box-container {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap: 2rem;
-   justify-content: center;
-   margin-top: 3rem;
+.course-card.featured:hover .featured-image img {
+   transform: scale(1.05);
 }
 
-.landing-features .box {
-   text-align: center;
+.course-info {
    padding: 2rem;
 }
 
-.landing-features .box i {
-   font-size: 4.5rem;
-   color: var(--main-color);
-   margin-bottom: 1.5rem;
+.course-info h3 {
+   font-size: 1.7rem;
+   color: var(--black);
+   margin-bottom: .8rem;
+   font-weight: 700;
+   padding: 0;
 }
 
-.landing-features .box h3 {
-   font-size: 2.2rem;
+.course-info p {
+   color: var(--light-color);
+   font-size: 1.4rem;
+   margin-bottom: 1.2rem;
+}
+
+.course-stats {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.course-stats .rating {
+   color: #f4c150;
+   font-weight: bold;
+   font-size: 1.4rem;
+}
+
+.course-stats .price {
+   color: var(--black);
+   font-weight: bold;
+   font-size: 1.6rem;
+}
+
+.bestseller {
+   display: inline-block;
+   background-color: #20b2aa;
+   color: #fff;
+   padding: .5rem 1rem;
+   border-radius: .4rem;
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+/* --- Trusted Companies --- */
+.trusted-section {
+   text-align: center;
+   padding: 5rem 2rem;
+   margin: 0;
+}
+
+.trusted-section p {
+   font-size: 1.7rem;
+   color: var(--light-color);
+   margin-bottom: 3rem;
+}
+
+.company-logos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 4rem;
+}
+
+.company-logos img {
+   height: 4rem;
+   width: auto;
+   opacity: 0.6;
+   filter: grayscale(100%);
+   transition: all .3s ease;
+}
+
+.company-logos img:hover {
+   opacity: 1;
+   filter: grayscale(0%);
+}
+
+/* --- Learning Features Section --- */
+.learn-features {
+   background: linear-gradient(135deg, #FFD580, #FFBF47);
+   padding: 6rem 2rem;
+}
+
+.learn-features .section-header {
+   text-align: center;
+   margin-bottom: 4rem;
+}
+
+.learn-features .section-header h2 {
+   font-size: 3rem;
+   color: #1a1a2e;
+   font-weight: 800;
+   letter-spacing: 2px;
+}
+
+.features-container {
+   display: flex;
+   gap: 5rem;
+   max-width: 1200px;
+   margin: 0 auto;
+   align-items: center;
+}
+
+.features-content {
+   flex: 2;
+   display: flex;
+   flex-direction: column;
+   gap: 2.5rem;
+}
+
+.feature-card {
+   background-color: #fff;
+   padding: 2.5rem;
+   border-radius: 1.2rem;
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+   transition: all .3s ease;
+}
+
+.feature-card:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.feature-card .feature-icon {
+   width: 5rem;
+   height: 5rem;
+   min-width: 5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.feature-card .feature-icon img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.feature-card .feature-icon i {
+   font-size: 3rem;
+   color: var(--main-color);
+}
+
+.feature-card .feature-text h3 {
+   font-size: 1.8rem;
+   color: #1a1a2e;
+   margin-bottom: .5rem;
+   font-weight: 700;
+}
+
+.feature-card .feature-text p {
+   font-size: 1.5rem;
+   color: #555;
+   line-height: 1.6;
+}
+
+.features-image {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.features-image img {
+   max-width: 30rem;
+   height: auto;
+   animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+   0%, 100% { transform: translateY(0); }
+   50% { transform: translateY(-15px); }
+}
+
+/* --- Testimonials Section --- */
+.testimonials-section {
+   padding: 6rem 2rem;
+   background-color: var(--white);
+   text-align: center;
+}
+
+.testimonials-section h2 {
+   font-size: 3rem;
    color: var(--black);
    margin-bottom: 1rem;
-   text-transform: capitalize;
+   font-weight: 800;
 }
 
-.landing-features .box p {
-   font-size: 1.6rem;
+.testimonials-section > p {
    color: var(--light-color);
-   line-height: 2;
+   font-size: 1.7rem;
+   margin-bottom: 4rem;
+}
+
+.testimonials-container {
+   display: flex;
+   gap: 2.5rem;
+   max-width: 1200px;
+   margin: 0 auto;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.testimonial-card {
+   flex: 1;
+   min-width: 28rem;
+   max-width: 38rem;
+   background-color: #FFF5E6;
+   padding: 3rem;
+   border-radius: 1.2rem;
+   text-align: left;
+   transition: all .3s ease;
+   border: .1rem solid rgba(0,0,0,.04);
+}
+
+body.dark .testimonial-card {
+   background-color: #2a2a2a;
+}
+
+.testimonial-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+   font-size: 1.6rem;
+   color: var(--black);
+   line-height: 1.7;
+   font-style: italic;
+}
+
+.testimonial-card .author {
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   margin-top: 2rem;
+}
+
+.testimonial-card .avatar {
+   width: 4.5rem;
+   height: 4.5rem;
+   background: linear-gradient(135deg, var(--main-color), #9b59b6);
+   color: #fff;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 700;
+   font-size: 1.4rem;
+}
+
+.testimonial-card .name {
+   font-size: 1.5rem;
+   color: var(--black);
+   font-weight: 700;
+}
+
+/* --- Partners --- */
+.partners-section {
+   text-align: center;
+   padding: 4rem 2rem;
+   border-top: var(--border);
+}
+
+.partners-section p {
+   font-size: 1.7rem;
+   color: var(--light-color);
+   margin-bottom: 2rem;
+}
+
+.partner-logos {
+   display: flex;
+   justify-content: center;
+   gap: 4rem;
+   flex-wrap: wrap;
+}
+
+.partner-logos img {
+   height: 4rem;
+   object-fit: contain;
+   opacity: 0.6;
+   filter: grayscale(100%);
+   transition: all .3s ease;
+}
+
+.partner-logos img:hover {
+   opacity: 1;
+   filter: grayscale(0%);
+}
+
+/* ==========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================== */
+
+@media (max-width: 1200px) {
+   .landing-hero {
+      gap: 1.5rem;
+   }
+   .landing-hero .content {
+      flex: 0 1 42rem;
+      padding: 3rem;
+   }
+   .landing-hero .content h1 {
+      font-size: 3.2rem;
+   }
+}
+
+@media (max-width: 991px) {
+   .landing-hero {
+      flex-direction: column-reverse;
+      padding: 3rem 2rem;
+      min-height: auto;
+   }
+   .landing-hero .content {
+      flex: 1 1 auto;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+   }
+   .landing-hero .hero-buttons {
+      justify-content: center;
+   }
+   .landing-hero .image {
+      height: 35rem;
+      width: 100%;
+   }
+   .features-container {
+      flex-direction: column;
+   }
+   .features-image img {
+      max-width: 22rem;
+   }
 }
 
 @media (max-width: 768px) {
+   .promo-banner .banner-content {
+      font-size: 1.3rem;
+   }
    .landing-hero .content h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
+   }
+   .landing-hero .content p {
+      font-size: 1.5rem;
+   }
+   .landing-hero .image {
+      height: 28rem;
+   }
+   .career-section h2 {
+      font-size: 2.4rem;
+   }
+   .skills-section h2,
+   .learn-features .section-header h2,
+   .testimonials-section h2 {
+      font-size: 2.4rem;
+   }
+   .course-cards {
+      gap: 2rem;
+   }
+   .course-card {
+      width: 100%;
+      max-width: 35rem;
+   }
+   .testimonials-container {
+      flex-direction: column;
+      align-items: center;
+   }
+   .testimonial-card {
+      max-width: 100%;
+   }
+   .company-logos {
+      gap: 2.5rem;
+   }
+   .company-logos img {
+      height: 3rem;
+   }
+   .featured-courses {
+      flex-direction: column;
+      align-items: center;
+   }
+   .course-card.featured {
+      max-width: 100%;
+      width: 100%;
+   }
+}
+
+@media (max-width: 450px) {
+   .landing-hero .content {
+      padding: 2.5rem;
+   }
+   .landing-hero .content h1 {
+      font-size: 2.5rem;
+   }
+   .landing-hero .hero-buttons {
+      flex-direction: column;
+   }
+   .landing-hero .hero-buttons .try-btn,
+   .landing-hero .hero-buttons .ai-btn {
+      width: 100%;
+      text-align: center;
+   }
+   .skills-courses {
+      flex-direction: column;
+      align-items: center;
+   }
+   .skill-item {
+      width: 100%;
+      max-width: 30rem;
+   }
+   .feature-card {
+      flex-direction: column;
+      text-align: center;
    }
 }
