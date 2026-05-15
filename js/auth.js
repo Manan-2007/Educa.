@@ -18,8 +18,9 @@ function loadUserName() {
    if (profileName) profileName.textContent = displayName;
 
    if (currentUser) {
-      document.querySelectorAll('.flex-btn').forEach(btn => {
-         btn.innerHTML = '<a href="#" class="option-btn" onclick="logoutUser(); return false;">logout</a>';
+      document.querySelectorAll('.flex-btn').forEach(function(btn) {
+         btn.innerHTML = '<a href="#" class="option-btn"'
+            + ' onclick="logoutUser(); return false;">Logout</a>';
       });
    }
 }
